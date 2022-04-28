@@ -33,12 +33,6 @@ def skills(skill):
 
     return format_candidates(get_candidates_skills(candidat_raw, skill))
 
-# @app.route('/skills/<skill>')
-# def skills(skill):
-#     candidat_raw = get_candidates('candidates.json')
-#
-#     return format_candidates(get_candidates_skills(candidat_raw, skill))
-
 
 @app.route('/search/<candidate_name>')
 def candidate_search_name(candidate_name):
@@ -46,6 +40,7 @@ def candidate_search_name(candidate_name):
     candidates = get_candidates_by_name(candidat_raw, candidate_name)
 
     return render_template('search.html', num=len(candidates), name=candidates)
+
 
 @app.route('/search_skill/<skill>')
 def candidate_search_skill(skill):

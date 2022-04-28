@@ -34,32 +34,6 @@ def get_candidates_skills(candidat_raw, candidate_skill):
     return result
 
 
-
-# yyy = [
-# {
-# "id": 1,
-# "name": "Adela Hendricks",
-# "picture": "https://picsum.photos/200",
-# "position": "Go разработчик",
-# "gender": "female",
-# "age": 40,
-# "skills": "go, python"
-# },
-# {
-# "id": 2,
-# "name": "Adela Sheri Torres",
-# "picture": "https://picsum.photos/200",
-# "position": "Delphi developer",
-# "gender": "female",
-# "age": 26,
-# "skills": "Delphi, pascal, fortran, basic"
-# }
-# ]
-#
-# ttt = get_candidates_skills(yyy, 'pascal')
-# print(ttt)
-
-
 def get_candidates_by_name(candidat_raw, candidate_name):
     result = []
     for i in candidat_raw:
@@ -67,4 +41,3 @@ def get_candidates_by_name(candidat_raw, candidate_name):
         if candidate_name in candidat_name:
             result.append(i)
     return result
-
